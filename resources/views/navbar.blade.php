@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{route('index')}}">SLC, IIT Madras</a>
+            <a class="navbar-brand" href="{{route('index')}}">Disaster Management Committee</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -15,29 +15,11 @@
                 <li>
                     <a href="{{route('blog.index')}}">Blog</a>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Quick Links
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li>
-                            <a href="{{route('constitution')}}">Constitution</a>
-                        </li>
-                        <li>
-                            <a href="{{route('documents')}}">Other Documents</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="{{route('minutes')}}">Minutes</a>
-                        </li>
-                        <li>
-                            <a href="{{route('finances')}}">Finances</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="{{route('gallery')}}">Gallery</a>
-                        </li>
-                    </ul>
+                <li>
+                    <a href="{{route('gallery')}}">Gallery</a>
+                </li>
+                <li>
+                    <a href="{{route('vol.create')}}">Volunteer</a>
                 </li>
                 <li>
                     <a href="{{route('contact')}}">Contact</a>

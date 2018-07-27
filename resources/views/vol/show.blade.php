@@ -5,11 +5,8 @@
     <small class="text-muted">Created On: {{$post->created_at}}</small>
     <h5>Written By: {{$post->author}}</h5>
     <hr>
-    {{-- <p class="word-break: break-all; white-space: normal;">{!! str_replace('
-' ,'<br>
-' ,str_replace(' ','&nbsp;', $post->body)) !!}</p> --}}
-    <p class="word-break: break-all; white-space: normal;">{!! str_replace('
-','<br>', $post->body) !!}</p>
+    <p>{!! str_replace('
+' ,'<br>' ,str_replace(' ','&nbsp;', $post->body)) !!}</p>
     
     <hr>
     <form class="text-right" action="{{route('blog.destroy', ['id' => $post->id])}}" method="POST">

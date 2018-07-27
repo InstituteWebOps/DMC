@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/SLC/', function () {
+Route::get('/DMC/', function () {
     return view('index');
 })->name('index');
 
-Route::resource('/SLC/blog', 'BlogController', 
+Route::resource('/DMC/blog', 'BlogController', 
 [
     'names' => [
         'index'     => 'blog.index',
@@ -28,40 +28,35 @@ Route::resource('/SLC/blog', 'BlogController',
     ]
 ]);
 
-// 
-Route::get('/SLC/constitution', function () {
-    return view('other.constitution');
-})->name('constitution');
+Route::resource('/DMC/volunteer', 'VolunteerController', 
+[
+    'names' => [
+        'index'     => 'vol.index',
+        'create'    => 'vol.create',
+        'store'     => 'vol.store',
+        'show'      => 'vol.show',
+        'edit'      => 'vol.edit',
+        'update'    => 'vol.update',
+        'destroy'   => 'vol.destroy'
+    ]
+]);
 
-Route::get('/SLC/documents', function () {
-    return view('other.documents');
-})->name('documents');
-
-
-Route::get('/SLC/minutes', function () {
-    return view('other.minutes');
-})->name('minutes');
-
-Route::get('/SLC/finances', function () {
-    return view('other.finances');
-})->name('finances');
-
-
-Route::get('/SLC/gallery', function () {
+Route::get('/DMC/gallery', function () {
     return view('other.gallery');
 })->name('gallery');
-// 
 
-
-Route::get('/SLC/contact', function () {
+Route::get('/DMC/contact', function () {
     return view('other.contact');
 })->name('contact');
 
 
-Route::get('/SLC/about', function () {
+Route::get('/DMC/about', function () {
     return view('other.about');
 })->name('about');
 
+Route::get('/DMC/volunteer', function () {
+    return view('other.volunteer');
+})->name('about');
 
 Route::get('/admin', function() {
     return view('admin.home');

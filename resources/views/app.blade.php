@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://bootswatch.com/3/journal/bootstrap.min.css">
-    <title>Laravel</title>
+    <link rel="stylesheet" href="https://bootswatch.com/3/sandstone/bootstrap.min.css">
+    <title>DMC</title>
 </head>
 <body>
     @include('navbar')
         
     <div class="container">
             @include('messages')
-        @section('content') 
+        @section('content')
         @show        
     </div>
 
