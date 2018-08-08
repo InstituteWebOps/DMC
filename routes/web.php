@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/DMC/', function () {
+Route::get('/', function () {
     return view('index');
 })->name('index');
 
-Route::resource('/DMC/blog', 'BlogController', 
+Route::resource('/blog', 'BlogController', 
 [
     'names' => [
         'index'     => 'blog.index',
@@ -28,7 +28,7 @@ Route::resource('/DMC/blog', 'BlogController',
     ]
 ]);
 
-Route::resource('/DMC/volunteer', 'VolunteerController', 
+Route::resource('/volunteer', 'VolunteerController', 
 [
     'names' => [
         'index'     => 'vol.index',
@@ -41,20 +41,20 @@ Route::resource('/DMC/volunteer', 'VolunteerController',
     ]
 ]);
 
-Route::get('/DMC/gallery', function () {
+Route::get('/gallery', function () {
     return view('other.gallery');
 })->name('gallery');
 
-Route::get('/DMC/contact', function () {
+Route::get('/contact', function () {
     return view('other.contact');
 })->name('contact');
 
 
-Route::get('/DMC/about', function () {
+Route::get('/about', function () {
     return view('other.about');
 })->name('about');
 
-Route::get('/DMC/volunteer', function () {
+Route::get('/volunteer', function () {
     return view('other.volunteer');
 })->name('about');
 
